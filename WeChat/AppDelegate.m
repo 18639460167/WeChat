@@ -1,0 +1,81 @@
+//
+//  AppDelegate.m
+//  WeChat
+//
+//  Created by 张帅 on 2017/10/23.
+//  Copyright © 2017年 Black. All rights reserved.
+//
+
+#import "AppDelegate.h"
+#import "ViewController.h"
+
+@interface AppDelegate ()
+
+@end
+
+@implementation AppDelegate
+
+
+struct aStruct{
+    // 结构体里面与最大字节对齐
+    int a; // 4
+    char b; // 对齐4
+    int c; // 4
+    char d; // 对齐4
+};
+struct twoStruct{
+    int a; //4
+    char b; // （b和c）于a对齐为4
+    char c;
+    int d; // 4
+};
+struct threeStruct{
+    int a;  // 4
+    char b; // (b,c,k)与a对齐为4
+    char c;
+    char k;
+    int d; // d = 4
+};
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    
+    NSLog(@"==%luu",sizeof(struct aStruct));
+    NSLog(@"==%lu",sizeof(struct twoStruct));
+    NSLog(@"==%lu",sizeof(struct threeStruct));
+
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+}
+
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+}
+
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+}
+
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+}
+
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+@end
