@@ -405,6 +405,7 @@
 		C10D7E0C1F9DD6E800EBF981 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		C10D7E0E1F9DE05600EBF981 /* UILabel+TapAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+TapAction.h"; sourceTree = "<group>"; };
 		C10D7E0F1F9DE05600EBF981 /* UILabel+TapAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TapAction.m"; sourceTree = "<group>"; };
+		C136B4071FD8E98200EF3B19 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		C161AD411F9EE83300C6CF31 /* CopyAbleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyAbleLabel.h; sourceTree = "<group>"; };
 		C161AD421F9EE83300C6CF31 /* CopyAbleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyAbleLabel.m; sourceTree = "<group>"; };
 		C161AD451F9EEF5B00C6CF31 /* Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Layout.h; sourceTree = "<group>"; };
@@ -572,6 +573,7 @@
 				C10D7AFF1F9DD14C00EBF981 /* ViewController.h */,
 				C10D7B001F9DD14C00EBF981 /* ViewController.m */,
 				C10D7E091F9DD62400EBF981 /* WeChat.pch */,
+				C136B4071FD8E98200EF3B19 /* Define.h */,
 				C10D7E0A1F9DD6C300EBF981 /* Category */,
 				C10D7E041F9DD19A00EBF981 /* 微信 */,
 				C10D7B2E1F9DD17700EBF981 /* ThirdLib */,
