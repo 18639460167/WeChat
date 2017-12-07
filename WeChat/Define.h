@@ -9,7 +9,7 @@
 #ifndef Define_h
 #define Define_h
 
-//#define ServiceRoot @"https://biz1.huanyouji.com"
+//#define ServiceRoot2 @"https://biz1.huanyouji.com"
 #define ServiceRoot @"https://biz.huanyouji.com"
 #define ServiceRoot1 @"http://coupon.huanyouji.com"
 
@@ -137,6 +137,88 @@
 #define YW_OWN_USER @"云旺账号"
 #define kSPCustomConversationIdForFAQ  @"cnhhupanutravel_custom_service"
 #define YW_IS_LOGIN @"云旺是否登录"
+
+
+// 签约宝
+//typedef void (^noParameter)(void);
+//typedef void (^actionHandle)(id obj);
+//
+//#define ServiceRoot @"http://cn.finance.huanyouji.com"
+//
+//#define LS(key) NSLocalizedString(key, nil)
+//#define HYWeakSelf __weak __typeof(self) wSelf = self
+//#define HYStrongSelf  __strong typeof(self) sSelf = wSelf
+//
+//#define SET_USER_DEFAULT(value,key) [[NSUserDefaults standardUserDefaults]setValue:value forKey:key]
+//#define USER_DEFAULT(key) [[NSUserDefaults standardUserDefaults]valueForKey:key]
+//#define REMOVE_USER_DEFAULT(key) [[NSUserDefaults standardUserDefaults]removeObjectForKey:key]
+//#define SYN_USER_DEFAULT [[NSUserDefaults standardUserDefaults]synchronize]
+//
+//#define READ_SHOP_SIGN(obj) (USER_DEFAULT(obj) != nil ?USER_DEFAULT(obj):@"")
+//#define READ_MESSAGE(obj,default) (USER_DEFAULT(obj) != nil ?USER_DEFAULT(obj):(default))
+//
+//#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+//#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+//#define RGBSAME(value)(RGB(value,value,value))
+//#define WHITE_COLOR ([UIColor whiteColor])
+//#define BLACK_COLOR ([UIColor blackColor])
+//#define CLEAR_COLOR ([UIColor clearColor])
+//
+//#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+//#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//#define HScale (SCREEN_HEIGHT/667.0)
+//#define WScale (SCREEN_WIDTH/375.0)
+//#define BDWidth(width) ((width)*(SCREEN_WIDTH/375.0))
+//#define BDHeight(height) ((height)*(SCREEN_HEIGHT/667.0))
+//
+//#define FONTSIZE(font) ([UIFont systemFontOfSize:font*WScale])
+//#define IMAGE_NAME(name) ([UIImage imageNamed:name])
+//
+///**
+// *  数据处理
+// */
+//
+//#define BD_ValidDict(f) (f!=nil && [f isKindOfClass:[NSDictionary class]])
+//#define BD_ValidArray(f) (f!=nil &&[f isKindOfClass:[NSArray class]])
+//#define BD_ValidClass(f,cls) (f!=nil &&[f isKindOfClass:[cls class]])
+//
+//
+//
+//#define OS_VERSION [NSString stringWithFormat:@"%@", [[UIDevice currentDevice] systemVersion]]
+//#define OS_ISVERSION7 (BOOL)([OS_VERSION substringToIndex:1].integerValue >= 7)
+//
+//
+///**
+// *  字体
+// */
+//#define LIGHT @"STHeitiSC-Light"
+//#define GB1_0 @"FZLTHJW--GB1-0"
+//#define Thonburi @"Thonburi"
+//
+//#define REQUEST_TIME 10.0
+//#define ErrorInfo_ShowTime 1.5
+//#define ERRMSG @"errmsg"
+//#define RESULT @"result"
+//#define PAGE @"page"
+//#define TOTAL_COUNT @"total_count"
+//#define LIST @"list"
+//#define REQUEST_SUCCESS @"数据请求成功"
+//#define NEED_LOGIN @"用户需要登录"
+//
+//#define Notification_orderChange @"Notification_OrderChange"
+//#define Home_ScrollChange @"Notification_ScrollChange"
+//
+//#define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+//#define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
+///**
+// *  文本
+// */
+//#define AccessToken @"USER_TOKEN"
+//#define User_ID @"用户ID数据库标示"
+//#define User_Name @"用户姓名"
+//
+//#define TRIM(string) [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+
 
 
 #endif /* Define_h */

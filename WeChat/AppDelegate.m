@@ -42,6 +42,7 @@ struct threeStruct{
     NSLog(@"==%luu",sizeof(struct aStruct));
     NSLog(@"==%lu",sizeof(struct twoStruct));
     NSLog(@"==%lu",sizeof(struct threeStruct));
+    NSLog(@"测试数据");
 
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
